@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editFirstName"
+        android:hint="FirstName" />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFirstName"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/editAge"
+        android:id="@+id/editLastName"
+        android:hint="LastName" />
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFirstName"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal"
+        android:id="@+id/editAge"
+        android:hint="Age" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:backgroundTint="#ff0a6fec"
+        android:layout_below="@id/editAge" />
+</RelativeLayout>
